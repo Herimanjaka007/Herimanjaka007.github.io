@@ -16,7 +16,7 @@ body{
     transform: rotate(35deg);
 }
 
-@media screen and (max-width= 460px ) {
+@media screen and (max-width: 460px ) {
     .back{
         display: none;
     }
