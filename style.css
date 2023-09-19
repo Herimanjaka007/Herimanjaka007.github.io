@@ -16,6 +16,36 @@ body{
     transform: rotate(35deg);
 }
 
+.pricing .row{
+    opacity: 0;
+    animation: showScale .9s ease-in-out 250ms;
+    animation-fill-mode: forwards;
+}
+
+.fake-header{
+    opacity: 0;
+    animation: fake-show .3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes fake-show {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translate(100);
+    }
+}
+@keyframes showScale {
+    from{
+        opacity: 0;
+        transform: scale(.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 @media screen and (max-width: 460px ) {
     .back{
         display: none;
